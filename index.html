@@ -7,32 +7,35 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="shadow">
 
   <nav>
     <div class="logo"></div>
     <div class="burger-icon"></div>
+    <div class="x-icon"></div>
     <div class="nav">
       <ul class="features">
-        <p>Features</p>
-        <li>Todo List</li>
-        <li>Calendar</li>
-        <li>Reminders</li>
-        <li>Planning</li>
+        <div class="feature-text"><p>Features</p><div class="arrow-icon"></div></div>
+        <li class="feature first-feature"><img class="features-icon" src="./images/icon-todo.svg" alt="todo-icon">Todo List</li>
+        <li class="feature"><img class="features-icon" src="./images/icon-calendar.svg" alt="calendar-icon">Calendar</li>
+        <li class="feature"><img class="features-icon" src="./images/icon-reminders.svg" alt="bell-icon">Reminders</li>
+        <li class="feature"><img class="features-icon" src="./images/icon-planning.svg" alt="clock-icon">Planning</li>
       </ul>
-      <ul>
-        <p>Company</p>
-        <li>History</li>
-        <li>Our Team</li>
-        <li>Blog</li>
+      <ul class="company">
+        <div class="company-text"><p>Company</p> <div class="arrow-icon"></div></div>
+        <li class="company-details first-company-details">History</li>
+        <li class="company-details">Our Team</li>
+        <li class="company-details">Blog</li>
       </ul>
-      <p>Careers</p>
-      <p>About</p>
+      <ul class="careers">
+        <p>Careers</p>
+      </ul>
+      <ul class="about"><p>About</p></ul>
       <div class="registration">
         <p class="login">Login</p>
         <p class="registrate">Register</p>
@@ -47,10 +50,10 @@
         watch productivity soar.</p>
       <button class="show-more"></button>
       <div class="companies">
-        <img src=".." alt="Friendly company" class="img1">
-        <img src=".." alt="Friendly company" class="img2">
-        <img src=".." alt="Friendly company" class="img3">
-        <img src=".." alt="Friendly company" class="img4">
+        <img src="./images/client-databiz.svg" alt="Friendly company" class="company-img">
+        <img src="./images/client-audiophile.svg" alt="Friendly company" class="company-img">
+        <img src="./images/client-meet.svg" alt="Friendly company" class="company-img">
+        <img src="./images/client-maker.svg" alt="Friendly company" class="company-img">
       </div>
     </div>
   </main>

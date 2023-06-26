@@ -5,19 +5,162 @@
 }
 
 body {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   font-family: "Work Sans", sans-serif;
 }
 
 nav {
   position: relative;
   display: flex;
-  margin: 2% 1%;
+  height: 4%;
+  justify-content: space-between;
+  margin: 7% 0;
 }
 nav .logo {
+  margin-left: 4%;
   width: 100px;
   background-image: url(../images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+nav .nav > ul,
+nav p {
+  margin: 2% 0;
+}
+nav .nav {
+  display: none;
+  flex-direction: column;
+  margin-top: -7%;
+  padding: 20% 0 0 5%;
+  width: 65%;
+  height: 100vh;
+  font-size: 20px;
+  background-color: #fff;
+}
+nav .nav ul {
+  list-style: none;
+}
+nav .nav .company-details, nav .nav .feature {
+  margin-left: 20px;
+}
+nav .nav .feature-text, nav .nav .company-text {
+  display: flex;
+  align-items: center;
+}
+nav .nav .arrow-icon {
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  margin: 10px 0 0 10px;
+  background-image: url(../images/icon-arrow-down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+nav .nav .features-icon {
+  margin-right: 10px;
+}
+nav .nav .company-details, nav .nav .feature {
+  margin-bottom: 10px;
+}
+nav .nav .first-feature, nav .nav .first-company-details {
+  margin-top: 15px;
+}
+nav .nav .features:last-child, nav .nav .company:last-child {
+  margin-bottom: 5px;
+}
+nav .nav .features-arrow, nav .nav .company-arrow {
+  margin-left: 3%;
+  cursor: pointer;
+}
+nav .nav .features-arrow:first-child, nav .nav .company-arrow:first-child {
+  margin-top: 10px;
+}
+nav .nav .registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -9%;
+}
+nav .nav .registration .login, nav .nav .registration .registrate {
+  padding: 5% 25%;
+  cursor: pointer;
+}
+nav .nav .registration .registrate {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+nav .burger-icon::before,
+nav .burger-icon::after,
+nav .burger-icon {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+nav .burger-icon {
+  top: 15%;
+  right: 4%;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+nav .burger-icon::before {
+  content: "";
+  top: 10px;
+}
+nav .burger-icon::after {
+  content: "";
+  bottom: 10px;
+}
+nav .x-icon,
+nav .x-icon::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 2px;
+  background-color: black;
+}
+nav .x-icon {
+  display: none;
+  top: 15%;
+  right: 4.2%;
+  transform: rotate(45deg);
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+nav .x-icon::before {
+  top: 15%;
+  left: 4%;
+  transform: rotate(90deg);
+}
+nav .is-active {
+  display: flex;
+}
+nav .isnt-active {
+  display: none;
+}
+
+main {
+  position: relative;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+}
+main .main-img {
+  height: 40%;
+  background-image: url(../images/image-hero-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.shadow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.596);
+  z-index: 5;
 }/*# sourceMappingURL=style.css.map */
