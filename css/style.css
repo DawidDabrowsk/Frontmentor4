@@ -5,9 +5,65 @@
 }
 
 body {
+  position: relative;
   width: 100vw;
   height: 100vh;
   font-family: "Work Sans", sans-serif;
+}
+
+.burger {
+  position: absolute;
+  top: -2%;
+  width: 50px;
+  height: 50px;
+  right: 4%;
+  z-index: 10;
+}
+.burger .burger-icon::before,
+.burger .burger-icon::after,
+.burger .burger-icon {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  cursor: pointer;
+  z-index: 15;
+}
+.burger .burger-icon {
+  top: 50%;
+  right: 20%;
+  transition: opacity 0.5s;
+}
+.burger .burger-icon::before {
+  content: "";
+  top: 10px;
+}
+.burger .burger-icon::after {
+  content: "";
+  bottom: 10px;
+}
+.burger .x-icon,
+.burger .x-icon::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 2px;
+  background-color: black;
+  cursor: pointer;
+  z-index: 15;
+}
+.burger .x-icon {
+  display: none;
+  top: 50%;
+  right: 22%;
+  transform: rotate(45deg);
+  transition: opacity 0.5s;
+}
+.burger .x-icon::before {
+  top: 15%;
+  left: 4%;
+  transform: rotate(90deg);
 }
 
 nav {
@@ -37,6 +93,7 @@ nav .nav {
   height: 100vh;
   font-size: 20px;
   background-color: #fff;
+  z-index: 5;
 }
 nav .nav ul {
   list-style: none;
@@ -92,50 +149,6 @@ nav .nav .registration .registrate {
   border: 1px solid black;
   border-radius: 15px;
 }
-nav .burger-icon::before,
-nav .burger-icon::after,
-nav .burger-icon {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: black;
-}
-nav .burger-icon {
-  top: 15%;
-  right: 4%;
-  transition: opacity 0.5s;
-  cursor: pointer;
-}
-nav .burger-icon::before {
-  content: "";
-  top: 10px;
-}
-nav .burger-icon::after {
-  content: "";
-  bottom: 10px;
-}
-nav .x-icon,
-nav .x-icon::before {
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 2px;
-  background-color: black;
-}
-nav .x-icon {
-  display: none;
-  top: 15%;
-  right: 4.2%;
-  transform: rotate(45deg);
-  transition: opacity 0.5s;
-  cursor: pointer;
-}
-nav .x-icon::before {
-  top: 15%;
-  left: 4%;
-  transform: rotate(90deg);
-}
 nav .is-active {
   display: flex;
 }
@@ -156,11 +169,40 @@ main .main-img {
   background-repeat: no-repeat;
   z-index: -2;
 }
+main .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-text .company-text {
+  font-size: 36px;
+}
+main .main-text .site-text {
+  margin: 6%;
+  font-size: 18px;
+  text-align: center;
+}
+main .main-text .learn-more-btn {
+  margin-bottom: 35px;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: -5;
+}
+main .main-text .companies img {
+  transform: scale(0.8);
+}
 
 .shadow {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
+  margin-top: -10%;
   background-color: rgba(0, 0, 0, 0.596);
-  z-index: 5;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
