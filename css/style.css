@@ -31,6 +31,7 @@ body {
   z-index: 15;
 }
 .burger .burger-icon {
+  display: none;
   top: 50%;
   right: 20%;
   transition: opacity 0.5s;
@@ -65,6 +66,12 @@ body {
   left: 4%;
   transform: rotate(90deg);
 }
+.burger .is-active {
+  display: block;
+}
+.burger .isnt-active {
+  display: none;
+}
 
 nav {
   position: relative;
@@ -95,8 +102,11 @@ nav .nav {
   background-color: #fff;
   z-index: 5;
 }
-nav .nav ul {
+nav .nav .features, nav .nav .company {
   list-style: none;
+}
+nav .nav .features .feature, nav .nav .features .company-details, nav .nav .company .feature, nav .nav .company .company-details {
+  display: none;
 }
 nav .nav .company-details, nav .nav .feature {
   margin-left: 20px;
@@ -148,12 +158,6 @@ nav .nav .registration .login, nav .nav .registration .registrate {
 nav .nav .registration .registrate {
   border: 1px solid black;
   border-radius: 15px;
-}
-nav .is-active {
-  display: flex;
-}
-nav .isnt-active {
-  display: none;
 }
 
 main {

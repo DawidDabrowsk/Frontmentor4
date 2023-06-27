@@ -33,6 +33,7 @@ body {
     }
 
 	.burger-icon {
+        display: none;
 		top: 50%;
 		right: 20%;
 		transition: opacity 0.5s;
@@ -73,6 +74,12 @@ body {
 		left: 4%;
 		transform: rotate(90deg);
 	}
+    .is-active {
+        display: block;
+    }
+    .isnt-active {
+        display: none;
+    }
 
 }
 
@@ -108,9 +115,12 @@ nav {
 		background-color: #fff;
         z-index: 5;
 
-		ul {
+		.features, .company {
 			list-style: none;
-            
+
+            .feature, .company-details {
+                display: none;
+            }
 		}
 
         .company-details, .feature {
@@ -178,12 +188,7 @@ nav {
 
 	
 
-    .is-active {
-        display: flex;
-    }
-    .isnt-active {
-        display: none;
-    }
+    
 }
 
 main {
