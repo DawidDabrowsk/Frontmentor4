@@ -142,6 +142,14 @@ nav {
             cursor: pointer;
         }
 
+        .arrow-down {
+            background-image: url(../images/icon-arrow-down.svg);
+        }
+
+        .arrow-up {
+            background-image: url(../images/icon-arrow-up.svg);
+        }
+        
         .features-icon {
             margin-right: 10px;
         }
@@ -152,19 +160,6 @@ nav {
 
         .first-feature, .first-company-details {
             margin-top: 15px;
-        }
-
-        .features:last-child, .company:last-child {
-            margin-bottom: 5px;
-        }
-
-		.features-arrow, .company-arrow {
-			margin-left: 3%;
-			cursor: pointer;
-		}
-
-        .features-arrow:first-child, .company-arrow:first-child {
-            margin-top: 10px;
         }
 
 		.registration {

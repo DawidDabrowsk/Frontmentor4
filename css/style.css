@@ -125,6 +125,12 @@ nav .nav .arrow-icon {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+nav .nav .arrow-down {
+  background-image: url(../images/icon-arrow-down.svg);
+}
+nav .nav .arrow-up {
+  background-image: url(../images/icon-arrow-up.svg);
+}
 nav .nav .features-icon {
   margin-right: 10px;
 }
@@ -133,16 +139,6 @@ nav .nav .company-details, nav .nav .feature {
 }
 nav .nav .first-feature, nav .nav .first-company-details {
   margin-top: 15px;
-}
-nav .nav .features:last-child, nav .nav .company:last-child {
-  margin-bottom: 5px;
-}
-nav .nav .features-arrow, nav .nav .company-arrow {
-  margin-left: 3%;
-  cursor: pointer;
-}
-nav .nav .features-arrow:first-child, nav .nav .company-arrow:first-child {
-  margin-top: 10px;
 }
 nav .nav .registration {
   display: flex;
