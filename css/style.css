@@ -102,16 +102,22 @@ nav .nav {
   background-color: #fff;
   z-index: 5;
 }
-nav .nav .features, nav .nav .company {
+nav .nav .features,
+nav .nav .company {
   list-style: none;
 }
-nav .nav .features .feature, nav .nav .features .company-details, nav .nav .company .feature, nav .nav .company .company-details {
+nav .nav .features .feature,
+nav .nav .features .company-details,
+nav .nav .company .feature,
+nav .nav .company .company-details {
   display: none;
 }
-nav .nav .company-details, nav .nav .feature {
+nav .nav .company-details,
+nav .nav .feature {
   margin-left: 20px;
 }
-nav .nav .feature-text, nav .nav .company-text {
+nav .nav .feature-text,
+nav .nav .company-text {
   display: flex;
   align-items: center;
 }
@@ -134,10 +140,12 @@ nav .nav .arrow-up {
 nav .nav .features-icon {
   margin-right: 10px;
 }
-nav .nav .company-details, nav .nav .feature {
+nav .nav .company-details,
+nav .nav .feature {
   margin-bottom: 10px;
 }
-nav .nav .first-feature, nav .nav .first-company-details {
+nav .nav .first-feature,
+nav .nav .first-company-details {
   margin-top: 15px;
 }
 nav .nav .registration {
@@ -147,7 +155,8 @@ nav .nav .registration {
   align-items: center;
   margin-left: -9%;
 }
-nav .nav .registration .login, nav .nav .registration .registrate {
+nav .nav .registration .login,
+nav .nav .registration .registrate {
   padding: 5% 25%;
   cursor: pointer;
 }
@@ -205,4 +214,89 @@ main .main-text .companies img {
   margin-top: -10%;
   background-color: rgba(0, 0, 0, 0.596);
   z-index: -1;
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 92vw;
+    height: 800px;
+    overflow: hidden;
+  }
+  .logo {
+    margin-top: -200px;
+    padding: 1%;
+    display: inline;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 300px;
+  }
+  nav .nav {
+    width: 100%;
+    padding-top: 290px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: none;
+  }
+  nav .nav .links {
+    display: flex;
+    justify-content: flex-start;
+    height: 20px;
+  }
+  nav .nav .links .links > div, nav .nav .links ul {
+    margin-right: 0px;
+    padding-right: 40px;
+    font-size: 16px;
+  }
+  nav .nav .links .feature {
+    margin: 10px 0;
+  }
+  nav .nav .registration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+    font-size: 16px;
+  }
+  .burger {
+    display: none;
+  }
+  main {
+    margin: -150px 150px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+  }
+  main .main-img {
+    display: flex;
+    margin-left: 50px;
+    order: 2;
+    width: 350px;
+    height: 800px;
+    background-image: url(../images/image-hero-desktop.png);
+    text-align: center;
+  }
+  main .main-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 50px;
+    width: 45%;
+  }
+  main .main-text .company-text {
+    font-size: 60px;
+  }
+  main .main-text .site-text {
+    margin-left: 0;
+    text-align: left;
+  }
+  main .main-text .learn-more-btn {
+    z-index: 10;
+  }
 }/*# sourceMappingURL=style.css.map */
